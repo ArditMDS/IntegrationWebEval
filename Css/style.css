@@ -9,6 +9,10 @@ body {
     position: fixed;
     left: 75%;
     top: 80%;
+    transition: all 0.5s;
+}
+.fondCarré:hover {
+    transform: translate(20%, 20%);
 }
 .fondCercle1 {
     width: 80vh;
@@ -19,17 +23,26 @@ body {
     position: fixed;
     top: 60%;
     right: 70%;
+    transition: all 0.5s;
+    z-index: 2;
+}
+.fondCercle1:hover {
+    transform: translate(-50%, 20%);
 }
 .fondCercle2 {
     width: 80vh;
     height: 80vh;
     border-radius: 50%;
-    
     box-shadow: inset 1em -1em #D6D6D6;
     background-color: #50514F;
     position: fixed;
     top: -40%;
     left: 70%;
+    transition: all 0.5s;
+    z-index: 2;
+}
+.fondCercle2:hover {
+    transform: translate(20%, -20%);
 }
 .imageProfil {
     position:absolute;
@@ -137,14 +150,37 @@ h2.nom {
 .sousTitrePage {
     margin-left: 15em;
     font-size: 1.4em;
+    position: relative;
+    z-index: 10;
+}
+.containerTout {
+    position: relative;
+    display: flex;
+    width: 640px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    z-index: 10;
+}
+.ligne {
+    margin: 3em;
+    height: 5px;
+    width: 95vw;
+    background-color: #046971;
+    border-radius: 50%;
+    position: relative;
+    z-index: 10;
 }
 .lang{
     display: flex;
-    width: 50%;
+    width: 800px;
     align-items: center;
+    justify-content: center;
 }
 .nomLangue {
     margin-right: 10px;
+    width: 100px;
+}
+.espace {
     margin-left: 2em;
 }
 .petitPoint{
@@ -156,4 +192,10 @@ h2.nom {
 }
 .Blanc {
     background-color: lightgray;
+}
+.opacityNul {
+    opacity: 0;
+}
+.top {
+    align-items:unset;
 }
